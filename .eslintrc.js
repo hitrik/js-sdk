@@ -19,8 +19,7 @@ module.exports = {
         '@typescript-eslint/ban-ts-ignore': 0,
         '@typescript-eslint/explicit-function-return-type': 0,
         '@typescript-eslint/no-empty-function': 'off',
-        '@typescript-eslint/no-explicit-any': 'off',
-        'no-console': 'error',
+        '@typescript-eslint/no-explicit-any': 'off'
     },
     overrides: [
         {

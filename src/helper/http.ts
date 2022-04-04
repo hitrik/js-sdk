@@ -26,6 +26,7 @@ const doFetch = async <T>(url: string, props: FetchProps): Promise<FetchResponse
             try {
                 data = await r.json();
             } catch (e) {
+                console.error(e);
             } finally {
             }
 
@@ -34,7 +35,8 @@ const doFetch = async <T>(url: string, props: FetchProps): Promise<FetchResponse
                 data,
             };
         })
-        .catch(() => {
+        .catch((e) => {
+            console.error(e);
             return {
                 success: false,
             };

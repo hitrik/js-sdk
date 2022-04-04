@@ -62,6 +62,8 @@ export class UserHelper {
 
         if (response.success) {
             user = response.data;
+        } else {
+            console.error(response);
         }
 
         if (user) {
@@ -87,6 +89,8 @@ export class UserHelper {
             this.callListeners();
 
             return true;
+        } else {
+            console.error(response);
         }
 
         return false;
